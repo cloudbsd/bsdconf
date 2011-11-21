@@ -1,0 +1,25 @@
+
+1. generate RSA public/private keys
+
+ssh-keygen
+
+
+2. copy the public key to the remote
+
+cp ~/.ssh/id_rsa.pub liqi@remote_host
+ssh liqi@remote_host
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+
+or 
+
+ssh-copy-id -i liqi@remote_host
+
+
+3. write ssh client side config file
+put the config file into .ssh directory
+~/.ssh/config
+host hostid
+  user git
+  hostname remote_host
+  port 22
+  identityfile ~/.ssh/liqi
