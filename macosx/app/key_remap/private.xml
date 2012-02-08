@@ -6,9 +6,21 @@
   </appdef>
 
   <item>
-    <name>Swap Command Right to Control Right on MacVim.app</name>
-    <identifier>private.appdef</identifier>
+    <name>MacVim Swap Command Right to Control Right on MacVim.app</name>
+    <identifier>private.macvim</identifier>
     <only>MacVim</only>
+    <autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::CONTROL_R</autogen>
+  </item>
+
+  <appdef>
+    <appname>Terminal</appname>
+    <equal>com.apple.Terminal</equal>
+  </appdef>
+
+  <item>
+    <name>Terminal Swap Command Right to Control Right on Terminal.app</name>
+    <identifier>private.terminal</identifier>
+    <only>Terminal</only>
     <autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::CONTROL_R</autogen>
   </item>
 </root>
