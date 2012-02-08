@@ -16,7 +16,7 @@
 # If you are in doubt as to the purpose or necessity of a line, check first
 # in NOTES.
 #
-# $FreeBSD: stable/9/sys/amd64/conf/GENERIC 226405 2011-10-15 21:23:04Z kensmith $
+# $FreeBSD: release/9.0.0/sys/amd64/conf/GENERIC 227305 2011-11-07 13:40:54Z marius $
 
 cpu		HAMMER
 ident		GENERIC
@@ -64,6 +64,8 @@ options 	MAC			# TrustedBSD MAC Framework
 #options 	KDTRACE_FRAME		# Ensure frames are compiled in
 #options 	KDTRACE_HOOKS		# Kernel DTrace hooks
 options 	INCLUDE_CONFIG_FILE     # Include this file in kernel
+options 	KDB			# Kernel debugger related code
+options 	KDB_TRACE		# Print a stack trace for a panic
 
 # Make an SMP-capable kernel by default
 options 	SMP			# Symmetric MultiProcessor Kernel
@@ -93,7 +95,7 @@ options 	AHC_REG_PRETTY_PRINT	# Print register bitfields in debug
 device		ahd		# AHA39320/29320 and onboard AIC79xx devices
 options 	AHD_REG_PRETTY_PRINT	# Print register bitfields in debug
 					# output.  Adds ~215k to driver.
-device		amd		# AMD 53C974 (Tekram DC-390(T))
+device		esp		# AMD Am53C974 (Tekram DC-390(T))
 device		hptiop		# Highpoint RocketRaid 3xxx series
 device		isp		# Qlogic family
 #device		ispfw		# Firmware for QLogic HBAs- normally a module
@@ -322,6 +324,7 @@ device		uvscom		# USB serial support for DDI pocket's PHS
 
 # FireWire support
 device		firewire	# FireWire bus code
+# sbp(4) works for some systems but causes boot failure on others
 #device		sbp		# SCSI over FireWire (Requires scbus and da)
 device		fwe		# Ethernet over FireWire (non-standard!)
 device		fwip		# IP over FireWire (RFC 2734,3146)
