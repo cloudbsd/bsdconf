@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+  <appdef>
+    <appname>MacVim</appname>
+    <equal>org.vim.MacVim</equal>
+  </appdef>
+
+  <item>
+    <name>Swap Command Right to Control Right on MacVim.app</name>
+    <identifier>private.appdef</identifier>
+    <only>MacVim</only>
+    <autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::CONTROL_R</autogen>
+  </item>
+</root>
