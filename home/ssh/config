@@ -33,3 +33,9 @@ host 21
   hostname 172.16.0.21
   port 22
   identityfile ~/.ssh/id_rsa
+
+host 14
+  user ritchie
+  hostname 172.17.0.14
+  port 22
+  identityfile ~/.ssh/id_rsa
