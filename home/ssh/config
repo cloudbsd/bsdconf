@@ -1,24 +1,6 @@
 host dragon
   user liqi
-  hostname 172.16.198.132
-  port 22
-  identityfile ~/.ssh/id_rsa
-
-host monkey
-  user liqi
-  hostname 172.16.198.129
-  port 22
-  identityfile ~/.ssh/id_rsa
-
-host tiger
-  user liqi
-  hostname 172.16.198.139
-  port 22
-  identityfile ~/.ssh/id_rsa
-
-host ubuntu
-  user liqi
-  hostname 172.16.198.140
+  hostname 172.16.82.129
   port 22
   identityfile ~/.ssh/id_rsa
 
@@ -30,24 +12,24 @@ host kylin
 
 host 18
   user ritchie
-  hostname 192.168.1.18
+  hostname 172.16.0.18
   port 22
   identityfile ~/.ssh/id_rsa
 
 host 19
   user ritchie
-  hostname 192.168.1.19
+  hostname 172.16.0.19
   port 22
   identityfile ~/.ssh/id_rsa
 
 host 20
   user ritchie
-  hostname 192.168.1.20
+  hostname 172.16.0.20
   port 22
   identityfile ~/.ssh/id_rsa
 
 host 21
   user ritchie
-  hostname 192.168.1.21
+  hostname 172.16.0.21
   port 22
   identityfile ~/.ssh/id_rsa
