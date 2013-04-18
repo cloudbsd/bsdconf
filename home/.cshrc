@@ -1,3 +1,6 @@
+# make git diff show color correctly
+setenv  PAGER   "more -R"
+
 # set locale, to erase rdoc compiling error
 setenv  LC_CTYPE        en_US.UTF-8
 setenv  LANG            en_US.UTF-8
